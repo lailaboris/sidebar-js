@@ -19,16 +19,25 @@
 <body>
 
 
-        <header>
-            <h1>Dansk Hundekennel</h1>
-            <p>Velkommen til det bedste sted for dine pelsede venner!</p>
-        </header>
-
-        <div id="menuOpen" onclick="openNavPush()">Menu</div>
-
+       
+        <div class="sidebar" id="mySidebar">
+            <a href="#">Om os</a>
+            <a href="#">Service</a>
+            <a href="#">Hunde</a>
+            <a href="#">Kontakt</a>
+          </div>
+        
+          <div class="main" id="mainContent">
+            <header>
+                <h1>Dansk Hundekennel</h1>
+                <p>Velkommen til det bedste sted for dine pelsede venner!</p>
+            </header>
+            <button class="closebtn" onclick="toggleSidebar()">×</button>
+            <button class="openbtn sticky" onclick="toggleSidebar()">Menu</button>
 
         <section class="container">
 
+            
             <h2>Om Os</h2>
             <p>Vi er en dansk hundekennel dedikeret til at give fremragende pleje og kærlighed til hunde af alle racer.
             </p>

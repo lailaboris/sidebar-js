@@ -1,7 +1,4 @@
-
-
-
-  body {
+body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -13,9 +10,68 @@ header {
     background-color: #4caf50;
     color: #fff;
     padding: 20px;
- 
+    
 }
-
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color:#4caf50;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidebar a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+  }
+  
+  
+  .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    background: none;
+    border: none;
+    color: white;
+  }
+  
+  .main {
+    transition: margin-left 0.5s;
+    padding: 16px;
+  }
+  
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .sticky {
+    position: sticky; /* Når knappen skal være fastlåst */
+    top: 10px;
+    left: 10px;
+    z-index: 2;
+  }
+  
+  .default {
+    position: relative; /* Når knappen er i normal position */
+    top: 0;
+    left: 0;
+  }
 section {
     padding: 20px;
     margin: 20px;
@@ -48,14 +104,7 @@ footer {
     margin-bottom: 10px;
 }
 
-.container {
- 
-    
-}
-
 #featuredDogs{
    display: flex;
    justify-content: space-around; 
-}
-
-
+}  
